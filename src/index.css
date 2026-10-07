@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-black: #06070d;
+    --azul-violeta-deep: #0c0e24;
+    --azul-violeta-card: #121435;
+    --azul-violeta-primary: #4338ca;
+    --azul-violeta-light: #6366f1;
+    --violeta-primary: #8b5cf6;
+    --violeta-vibrant: #7c3aed;
+    --amarelo-laranja: #f59e0b;
+    --amarelo-laranja-accent: #f97316;
+  }
+
+  body {
+    background-color: #06070d;
+    color: #e2e8f0;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Futuristic ambient gradients */
+.bg-futuristic-glow {
+  background: 
+    radial-gradient(circle at 50% 0%, rgba(79, 70, 229, 0.22) 0%, transparent 60%),
+    radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.16) 0%, transparent 50%),
+    radial-gradient(circle at 15% 35%, rgba(67, 56, 202, 0.14) 0%, transparent 50%),
+    #06070d;
+}
+
+.card-futuristic {
+  background: rgba(16, 18, 45, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(99, 102, 241, 0.22);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 0 15px -3px rgba(67, 56, 202, 0.12);
+}
+
+.card-futuristic-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-futuristic-hover:hover {
+  border-color: rgba(139, 92, 246, 0.45);
+  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.6), 0 0 20px -2px rgba(124, 58, 237, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090a16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b2e63;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}

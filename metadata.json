@@ -1,0 +1,6 @@
+{
+  "name": "Calendário Editorial Inteligente",
+  "description": "Sistema de gestão editorial com Previsibilidade Ativa, grade de pautas, janela de sugestões, repertório sazonal e motor de alertas de 24h.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
